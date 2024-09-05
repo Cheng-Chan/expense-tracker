@@ -20,7 +20,7 @@ An example of CRUD APIs built with FastAPI, integrated with a PostgreSQL databas
 
 To set up the PostgreSQL database using Docker Compose, use the following configuration:
 
-````yaml
+```yaml
 version: "3.9"
 
 services:
@@ -34,12 +34,13 @@ services:
       - POSTGRES_PASSWORD=zayn
       - POSTGRES_USER=postgres
       - POSTGRES_DB=expense_tracker
+```
 
 To run the database service, execute:
 
 ```console
 docker compose -f compose-db.yml up -d
-````
+```
 
 Create schema in your database
 
@@ -78,3 +79,7 @@ uvicorn main:app --reload
 The project will be accessible at http://localhost:8000.
 
 This `README.md` includes the full setup instructions and details to get your FastAPI Expense Tracker application up and running. If you need more information or additional sections, feel free to ask!
+
+```
+
+```
